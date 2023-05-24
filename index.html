@@ -31,7 +31,7 @@
             <br>
             You <span class="italic">know</span> you want to.
         </p>
-        <form action="" method="post" id="form">
+        <form action="http://httpbin.org/post" method="post" id="form">
             <legend>Let's do this!</legend>
             <fieldset>
                 <label for="first-name">FIRST NAME</label>
@@ -51,14 +51,15 @@
             </fieldset>
             <fieldset>
                 <label for="password">PASSWORD</label>
-                <input id="password" name="password" type="password">
+                <input class="error" id="password" name="password" type="password">
+                <p>*Passwords do not match</p>
             </fieldset>
             <fieldset>
                 <label for="cpassword">CONFIRM PASSWORD</label>
-                <input id="cpassword" name="cpassword" type="password">
+                <input class="error" id="cpassword" name="cpassword" type="password">
             </fieldset>
         </form>
-        <button type="submit" for="form">Create Account</button>
+        <button type="submit" form="form">Create Account</button>
         <p id="bottom-text">Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
