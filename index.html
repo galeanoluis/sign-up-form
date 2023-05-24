@@ -8,38 +8,59 @@
     <title>Sign-up Form</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="rigth-side">
+    <div id="left-side">
         <div id="header">
-            <img id="logo" src="" alt="">
-            <h1>SUITS</h1>
+            <h1>Suits</h1>
         </div>
-        <p id="background-credit">background credits</p>
+        <p id="credit">Photo by <a
+                href="https://unsplash.com/@joecalih?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joecalih</a>
+            on <a
+                href="https://unsplash.com/photos/C-TfBymLK_0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
     </div>
-    <p>This is not a real service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum quia labore
-        pariatur veniam? Tenetur veritatis nostrum quia quo temporibus in facere minus reprehenderit delectus. Debitis,
-        beatae quibusdam? Nobis, explicabo!<br>
-        Sign up <span class="italic">now</span> to get started<br>
-        You <span class="italic">know</span> you want to.</p>
-    <form action="" method="post" id="form">
-        <legend>Let's do this!</legend>
-        <label for="first-name">FIRST NAME</label>
-        <input id="first-name" name="first-name" type="text">
-        <label for="last-name">LAST NAME</label>
-        <input id="last-name" name="last-name" type="text">
-        <label for="email">EMAIL</label>
-        <input id ="email" name="email" type="email">
-        <label for="phone">PHONE NUMBER</label>
-        <input id="phone" name="phone" type="tel">
-        <label for="password">PASSWORD</label>
-        <input id="password" name="password" type="password">
-        <label for="cpassword">CONFIRM PASSWORD</label>
-        <input id="cpassword" name="cpassword" type="password">
-    </form>
-    <button type="submit" for="form">Create Account</button>
-    <p>Already have an account? <a href="">Log in</a></p>
+    <div id="right-side">
+        <p id="text">This is not a real service! It's just a newsletter sign up page for a fictional tailor shop. I hope you have a good day and thanks for visiting this page!<br>
+            Sign up <span class="italic">now</span> to get started<br>
+            <br>
+            You <span class="italic">know</span> you want to.
+        </p>
+        <form action="" method="post" id="form">
+            <legend>Let's do this!</legend>
+            <fieldset>
+                <label for="first-name">FIRST NAME</label>
+                <input id="first-name" name="first-name" type="text">
+            </fieldset>
+            <fieldset>
+                <label for="last-name">LAST NAME</label>
+                <input id="last-name" name="last-name" type="text">
+            </fieldset>
+            <fieldset>
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" type="email">
+            </fieldset>
+            <fieldset>
+                <label for="phone">PHONE NUMBER</label>
+                <input id="phone" name="phone" type="tel">
+            </fieldset>
+            <fieldset>
+                <label for="password">PASSWORD</label>
+                <input id="password" name="password" type="password">
+            </fieldset>
+            <fieldset>
+                <label for="cpassword">CONFIRM PASSWORD</label>
+                <input id="cpassword" name="cpassword" type="password">
+            </fieldset>
+        </form>
+        <button type="submit" for="form">Create Account</button>
+        <p id="bottom-text">Already have an account? <a href="">Log in</a></p>
+    </div>
 </body>
 
 </html>
